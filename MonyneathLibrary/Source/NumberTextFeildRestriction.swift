@@ -11,7 +11,7 @@ open class NumberTextFeildRestriction :NSObject , UITextFieldDelegate {
     var minLength = 0
     
     public var textFeildErrorCallback : ((UITextField,String)->())?
-    public var textFeildDihdkldBeginEditingCallback : ((UITextField,String)->())?
+    public var textFeildDidBeginEditingCallback : ((UITextField,String)->())?
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
 
